@@ -4,48 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rev 07</title>
+    <title>Plus</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.5em;
         }
-
-        input {
+        input{
             font: normal 1.5em arial;
             width: 150px;
+            text-align: center;
         }
 
-        div#res{
+        #res{
             margin-top: 10px;
-            font-size: 1.5em;
+            font: normal 1.5em arial;
         }
 
 
     </style>
 </head>
 <body>
-
-    <h1>decreasing the values</h1>
-    <input type="number" name="txtn1" id="txtn1"> -
+    <h1>Multiply</h1>
+    <input type="number" name="txtn1" id="txtn1"> X
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Diminuir" onclick="Diminuir()">
+    <input type="button" value="Multiply" onclick="Multiply()">
     <div id="res">Result</div>
 
     <script>
 
-        function Diminuir () {
+        function Multiply () {
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('res')
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
-            var s = n1 - n2
 
-            res.innerHTML = `A Operação entre ${n1} e ${n2} deu ${s}`
-        }
+            var times = n1 * n2 
+
+            res.innerHTML = `The operation between ${n1} and ${n2} was: ${times}.`
+
+        }        
 
     </script>
-    
 </body>
 </html>

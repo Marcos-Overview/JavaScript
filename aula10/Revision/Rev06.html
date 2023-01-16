@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun</title>
+    <style>
+        #area{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 200px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Fun
+    </div>
+
+    <script>
+
+        var d = window.document.getElementById('area')
+        d.addEventListener('click', clicked)
+        d.addEventListener('mouseenter', came)
+        d.addEventListener('mouseout', out)
+
+        function clicked(){
+            d.innerText = 'you clicked'
+            d.style.color= 'white'
+            d.style.background = 'red'
+        }
+
+        function came(){
+            d.innerText = 'came in'
+            d.style.color = 'pink'
+            d.style.color = 'black'
+        }
+
+        function out(){
+            d.innerHTML = 'you have left buddy'
+            d.style.background = 'blue'
+        }
+
+    </script>
+</body>
+</html>

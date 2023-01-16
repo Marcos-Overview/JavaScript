@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rev04</title>
+    <title>Lower and Upper case</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
 </head>
 <body>
-    
     <script>
-
-        var name = window.prompt('Qual é o seu nome?')
-
-        document.writeln(`<h1>Bem vindo <strong>${name}</strong>! Seu nome tem ${name.length}</h1>`)
-        document.writeln(`Seja bem vindo <strong>${name.toUpperCase()}</strong>.<br/>`)
-        document.write(`Seu nome em letras minusculas é <strong>${name.toLowerCase()}</strong>`)
-
+        var name = window.prompt("whats your name ?")
+        document.writeln(`<h2>whats up ${name}, you name has ${name.length} letters in your name.</h2>`)
+        document.write(`Your name in Uppercase is: ${name.toUpperCase()}.<br/>`)
+        document.write(`Your name in Lower case is: ${name.toLowerCase()}.`)
     </script>
-
 </body>
 </html>

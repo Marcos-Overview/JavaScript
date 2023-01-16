@@ -7,10 +7,10 @@
     <title>Estrangeiro</title>
 </head>
 <body>
-    <h1>Digite o seu país</h1>
-    Digite o seu pais: <input type="text"  id="txtpaís">
+    <h1>Whats your country ?</h1>
+    where do you belong?: <input type="text"  id="txtpaís">
     <input type="button" value="Verificar" onclick="verificar()">
-    <div id="res">Resultado: </div>
+    <div id="res">Result: </div>
 
     <script>
 
@@ -19,7 +19,8 @@
             var país = window.document.getElementById('txtpaís')
             
             var res = window.document.getElementById('res')
-            res.innerText = `Você veio do pais ${país}`
+            var p = String(país.value)
+            res.innerText = `You come from ${p} buddy!`
 
 
         }

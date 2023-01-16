@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev05.1</title>
+</head>
+<body>
+    <h1>Begin the lactures in DOM</h1>
+    <p>here you going to see the result:</p>
+    <p>Enjoy how to use DOM in JS</p>
+    <div id="msg">click here</div>
+    <nav id="xxx">Caramelo</nav>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.createElement('p')
+        window.document.write('It is write like this: ' + p1.innerHTML)
+
+        p1.style.color = 'blue'
+        p1.style.background = 'black'
+        
+        var d = window.document.getElementById('msg')
+        d.style.color = 'green'
+        d.style.background = 'pink'
+
+        var a = window.document.getElementById('xxx')
+        a.style.color = 'red'
+        a.style.background = 'yellow'
+
+    </script>
+
+</body>
+</html>

@@ -1,8 +1,8 @@
-var fast = 80
-console.log(`A velocidade do seu carro foi ${fast} km/h`)
 
-if (fast > 90) {
-    console.log(`Você foi Multado! Ultrapassou a velocidade permitida.`)
-} else {
-    console.log(`Dirija com cuidado!`)
-}
+var vel = 70
+console.log(`Your velocity was ${vel}hm/h`)
+
+    if (vel > 70){ // simple condition
+    console.log("You have overpassed limite speed. fined!")
+    } 
+console.log('Drive carefully')
